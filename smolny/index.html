@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0A1330">
+<title>СМОЛЬНЫЙ — Сделано в Великой России</title>
+<meta name="description" content="Пальто, костюмы и трикотаж из русской шерсти и кашемира. Ограниченные тиражи.">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ======================= ШАПКА ======================= -->
+<header class="header">
+  <a href="#top" class="header__logo" aria-label="Смольный, наверх">
+    <img src="assets/crest-gold.png" alt="" class="only-dark" width="26" height="30">
+    <img src="assets/crest-dark.png" alt="" class="only-light" width="26" height="30">
+    <img src="assets/word-gold.png" alt="Смольный" class="header__word only-dark">
+    <img src="assets/word-dark.png" alt="Смольный" class="header__word only-light">
+  </a>
+
+  <nav class="nav" id="nav">
+    <a href="#collection">Коллекция</a>
+    <a href="#care">Размеры и уход</a>
+    <a href="#contacts">Связаться</a>
+  </nav>
+
+  <div class="tools">
+    <button class="icon" id="themeBtn" aria-label="Светлая тема" title="Светлая тема">
+      <svg viewBox="0 0 24 24" id="themeIcon"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+    </button>
+    <button class="icon icon--cart" id="cartBtn" aria-label="Корзина">
+      <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+      <em class="badge" id="badge">0</em>
+    </button>
+    <button class="icon burger" id="burger" aria-label="Меню" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ======================= ГЕРОЙ ======================= -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__inner">
+    <img src="assets/logo-gold.png" alt="Смольный. Сделано в Великой России" class="hero__logo only-dark">
+    <img src="assets/logo-dark.png" alt="Смольный. Сделано в Великой России" class="hero__logo only-light">
+    <p class="hero__text">
+      Пальто, костюмы и трикотаж из русской шерсти и кашемира.
+      Каждая вещь — ограниченным тиражом.
+    </p>
+    <div class="hero__cta">
+      <a href="#collection" class="btn btn--fill">Смотреть коллекцию</a>
+      <a href="#contacts" class="btn btn--ghost">Написать в Telegram</a>
+    </div>
+  </div>
+  <a href="#collection" class="scroll">Осень — зима 26</a>
+</section>
+
+<!-- ======================= УСЛОВИЯ ======================= -->
+<section class="section">
+  <div class="tiles">
+    <article>
+      <h3>Доставка по России бесплатно</h3>
+      <p>Курьером или в пункт выдачи, 2–5 дней. За границу — по договорённости.</p>
+    </article>
+    <article>
+      <h3>Обмен размера без вопросов</h3>
+      <p>30 дней на примерку дома. Не подошло — меняем или возвращаем деньги.</p>
+    </article>
+    <article>
+      <h3>Заказ через Telegram</h3>
+      <p>Собираете корзину, отправляете одним сообщением. Ответим в течение часа.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ======================= КАТАЛОГ ======================= -->
+<section class="section section--tint" id="collection">
+  <div class="head">
+    <div>
+      <h2 class="h2">Коллекция</h2>
+      <p class="lead">Вещи сезона. Тираж каждой ограничен партией ткани.</p>
+    </div>
+    <div class="filters" id="filters"></div>
+  </div>
+  <div class="grid" id="grid"></div>
+  <p class="empty" id="empty" hidden>В этой категории пока пусто. Выберите другую.</p>
+</section>
+
+<!-- ======================= РАЗМЕРЫ И УХОД ======================= -->
+<section class="section" id="care">
+  <div class="split">
+    <div>
+      <h2 class="h2">Размеры и уход</h2>
+      <p class="lead">
+        Мерки снимайте по телу, не поверх одежды. Верхняя одежда рассчитана
+        на джемпер под низ. Сомневаетесь между двумя размерами — берите меньший,
+        подгоним по фигуре бесплатно.
+      </p>
+      <button class="btn btn--ghost" id="sizeOpen" style="margin-top:28px">Открыть размерную сетку</button>
+    </div>
+    <ul class="facts">
+      <li><b>Шерсть</b><span>Сухая чистка, щётка вдоль ворса, широкие плечики</span></li>
+      <li><b>Кашемир</b><span>Ручная стирка в холодной воде, сушить разложенным</span></li>
+      <li><b>Лён</b><span>Машинная стирка 30°, гладить влажным</span></li>
+      <li><b>Кожа</b><span>Не мочить, сушить вдали от батареи</span></li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= ПОДВАЛ ======================= -->
+<footer class="footer" id="contacts">
+  <div class="footer__grid">
+    <div>
+      <img src="assets/logo-gold.png" alt="Смольный" class="footer__logo only-dark">
+      <img src="assets/logo-dark.png" alt="Смольный" class="footer__logo only-light">
+    </div>
+    <div>
+      <h4>Магазин</h4>
+      <ul>
+        <li><a href="#collection">Вся коллекция</a></li>
+        <li><a href="#collection" data-jump="Верхняя одежда">Верхняя одежда</a></li>
+        <li><a href="#collection" data-jump="Трикотаж">Трикотаж</a></li>
+        <li><a href="#collection" data-jump="Аксессуары">Аксессуары</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Помощь</h4>
+      <ul>
+        <li><button id="sizeOpen2">Размерная сетка</button></li>
+        <li><a href="#care">Уход за вещами</a></li>
+        <li><a href="#" data-tg>Доставка и возврат</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Связаться</h4>
+      <p class="footer__note">Вопросы по размеру, ткани и заказу — в Telegram. Отвечаем с 10 до 22.</p>
+      <a class="btn btn--fill" href="#" id="tgLink" target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.7 19c-.2 1-.9 1.3-1.8.8l-4.9-3.6-2.4 2.3c-.3.3-.5.5-1 .5l.4-5 9.1-8.2c.4-.4-.1-.6-.6-.2L6.3 12.8l-4.8-1.5c-1-.3-1-1 .2-1.5l18.8-7.2c.9-.3 1.6.2 1.4 1.7z"/></svg>
+        Открыть Telegram
+      </a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <span>© <span id="year"></span> Смольный</span>
+    <span class="footer__script">Сделано в Великой России</span>
+  </div>
+</footer>
+
+<!-- ======================= ЭКРАН ТОВАРА ======================= -->
+<div class="product" id="product" role="dialog" aria-modal="true" aria-label="Карточка товара">
+  <div class="product__bar">
+    <button class="back" id="back">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M15 5l-7 7 7 7"/></svg>
+      <span>В коллекцию</span>
+    </button>
+    <img src="assets/crest-gold.png" alt="" class="only-dark" width="22" height="26">
+    <img src="assets/crest-dark.png" alt="" class="only-light" width="22" height="26">
+    <button class="icon icon--cart" id="cartBtn2" aria-label="Корзина">
+      <svg viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7L6 8z"/><path d="M9 8V6a3 3 0 016 0v2"/></svg>
+      <em class="badge" id="badge2">0</em>
+    </button>
+  </div>
+  <div class="product__grid" id="productBody"></div>
+  <div class="also" id="also"></div>
+  <div class="stickybuy" id="stickybuy">
+    <div>
+      <div class="stickybuy__name" id="sbName"></div>
+      <div class="stickybuy__price" id="sbPrice"></div>
+    </div>
+    <button class="btn btn--fill" id="sbAdd">В корзину</button>
+  </div>
+</div>
+
+<!-- ======================= КОРЗИНА ======================= -->
+<div class="scrim" id="scrim"></div>
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Корзина">
+  <div class="drawer__top">
+    <h3 class="h3">Корзина</h3>
+    <button class="icon" id="cartClose" aria-label="Закрыть корзину">
+      <svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <div class="drawer__list" id="lines"></div>
+  <div class="drawer__foot" id="foot" hidden>
+    <div class="total"><span>Итого</span><span id="total">0 ₽</span></div>
+    <p class="drawer__note">Доставка бесплатно. Оплата после подтверждения в Telegram.</p>
+    <button class="btn btn--fill btn--wide" id="checkout">Оформить в Telegram</button>
+  </div>
+</aside>
+
+<!-- ======================= ЗАКАЗ В TELEGRAM ======================= -->
+<div class="modal" id="orderModal" role="dialog" aria-modal="true" aria-label="Заказ">
+  <div class="modal__box">
+    <div class="modal__head">
+      <h3 class="h3">Заказ готов</h3>
+      <button class="icon" id="orderClose" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <p class="modal__lead">Текст заказа уже скопирован. Откройте Telegram и вставьте его в чат — подтвердим наличие и пришлём способ оплаты.</p>
+    <pre class="order" id="orderText"></pre>
+    <div class="modal__actions">
+      <a class="btn btn--fill btn--wide" id="orderTg" href="#" target="_blank" rel="noopener">Открыть Telegram</a>
+      <button class="btn btn--ghost btn--wide" id="orderCopy">Скопировать ещё раз</button>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= РАЗМЕРНАЯ СЕТКА ======================= -->
+<div class="modal" id="sizeModal" role="dialog" aria-modal="true" aria-label="Размерная сетка">
+  <div class="modal__box">
+    <div class="modal__head">
+      <h3 class="h3">Размерная сетка</h3>
+      <button class="icon" id="sizeClose" aria-label="Закрыть"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+    <p class="modal__lead">Сантиметры, мерки по телу.</p>
+    <div class="tablewrap">
+      <table class="table">
+        <thead><tr><th>Размер</th><th>Грудь</th><th>Талия</th><th>Рукав</th><th>Рост</th></tr></thead>
+        <tbody>
+          <tr><td>46 / S</td><td>92</td><td>78</td><td>63</td><td>176</td></tr>
+          <tr><td>48 / M</td><td>96</td><td>82</td><td>64</td><td>180</td></tr>
+          <tr><td>50 / L</td><td>100</td><td>86</td><td>65</td><td>182</td></tr>
+          <tr><td>52 / XL</td><td>104</td><td>90</td><td>65</td><td>184</td></tr>
+          <tr><td>54 / XXL</td><td>108</td><td>95</td><td>66</td><td>186</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/products.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
