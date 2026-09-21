@@ -382,12 +382,12 @@ body.locked{overflow:hidden}
   display:flex;align-items:center;gap:10px;max-width:calc(100vw - 32px);
   padding:13px 22px;background:var(--surface);border:1px solid var(--accent);
   font-size:13.5px;box-shadow:var(--shadow);
-  transform:translate(-50%,160%);transition:transform .45s cubic-bezier(.2,.7,.3,1)
+  transform:translate(-50%,250%);opacity:0;pointer-events:none;
+  transition:transform .45s cubic-bezier(.2,.7,.3,1),opacity .3s ease
 }
-.toast.on{transform:translate(-50%,0)}
+.toast.on{transform:translate(-50%,0);opacity:1;pointer-events:auto}
 .toast b{color:var(--accent);font-weight:400;white-space:nowrap}
 .toast span{color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-
 /* =========================================================
    АДАПТИВ
    ========================================================= */
@@ -444,7 +444,7 @@ body.locked{overflow:hidden}
   .buy{display:none}          /* на телефоне покупка идёт из липкой панели */
   .thumbs{gap:8px}
   .line{grid-template-columns:60px 1fr auto;gap:12px}
-  .toast{left:16px;right:16px;transform:translateY(160%);max-width:none}
+  .toast{left:16px;right:16px;transform:translateY(250%);max-width:none}
   .toast.on{transform:translateY(0)}
 }
 
